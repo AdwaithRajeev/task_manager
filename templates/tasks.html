@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>All Tasks</title></head>
+<body>
+    <h2>All Tasks</h2>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task[1] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/add">Add Another Task</a>
+</body>
+</html>
